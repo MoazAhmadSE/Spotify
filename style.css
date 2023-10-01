@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto+Condensed:wght@700&display=swap');
+body{
+    background-color: gray;
+    overflow: hidden;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/* Header */
+
+nav{
+    font-family: 'Roboto Condensed', 'sans-serif';
+}
+ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    height: 80px; /* Set the height to 10% of the viewport height */
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+.brand {
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 3rem;
+}
+.brand img{
+    height: 70px;
+    padding: 0 3px;
+}
+nav ul li{
+    padding: 0 20px;
+}
+
+/* Mid */
+
+.container{
+    min-height: 73vh;
+    /* background-color: black; */
+    color: white;
+    font-family: 'Pacifico', 'cursive', 'Roboto Condensed', sans-serif;
+    display: flex;
+    width: 90%;
+    margin: 23px auto;
+    border-radius: 20px;
+    background-image: url('bg.jpg');
+    background-size: cover;
+}
+
+
+.songitemcontainer{
+    max-height: 300px; /* Adjust the height as needed */
+}
+.songlist{
+    padding: 15px 0 30px 20px;
+    width: 55%;
+    max-height: 80vh; /* Adjust the height as needed */
+    overflow-y: auto;
+}
+
+
+.songbanner{
+    width: 45%;
+}
+
+.songitem{
+    height: 60px;
+    display: flex;
+    width: 95%;
+    color: white;
+    margin: 15px 0;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 30px;
+    background-color: transparent;
+    border: 1px solid white;
+}
+
+.songitem img{
+    width: 5vh;
+    margin: 0 20px;
+    border-radius: 30px;
+}
+
+.name{
+    font-size: 2vh;
+}
+
+.timespan{
+    margin: 0 20px;;
+}
+
+.timespan i{
+    cursor: pointer;
+}
+
+/* Buttom */
+
+.buttom{
+    position: sticky;
+    height: 80px;
+    width: 100%;
+    background-color: black;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    flex-direction: column;
+}
+
+.icons{
+    margin-top: 10px;
+}
+.icons i{
+    cursor: pointer;
+}
+
+#myProgressBar{
+    width: 80vw;
+    cursor: pointer;
+}
+
+.songinfo{
+    position: absolute;
+    left: 10.5vw;
+}
+
+.songinfo img{
+    opacity: 0;
+    transition: opacity 0.2s ease-in;
+}
